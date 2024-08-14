@@ -1,12 +1,12 @@
 
 import React, { useState, useEffect } from "react";
-import {Device} from "@twilio/voice-sdk"
+
 import "./App.css";
 import proxzar from "./assets/proxzar.png";
 
 function App() {
   const [token, setToken] = useState("");
-  const [tokenExpTime, setTokenExpTime] = useState("");
+ 
   const [question, setQuestion] = useState("");
   const [responses, setResponses] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -21,7 +21,7 @@ function App() {
   const generateQueryFromResponse = "https://pf.proxzar.ai/EkgWebForms/api/Proxzar/Members/GenerateQuestion";
   const getSimilarQuestionsUrl = "https://pf.proxzar.ai/EkgWebForms/api/Proxzar/Members/GetSimilarQuestions";
   // const proxzarGetTwilioCapabilityTokenUrl = "https://pf.proxzar.ai/EkgWebForms/api/Proxzar/Members/TwilioCapabilityToken";
-  const proxzarToken = " https://pf.proxzar.ai/EkgWebForms/api/Proxzar/Members/AccessToken"
+  // const proxzarToken = " https://pf.proxzar.ai/EkgWebForms/api/Proxzar/Members/AccessToken"
 
   
   const divProxzarSbProxId = "NIPRPRDSVC01";
